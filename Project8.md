@@ -242,14 +242,40 @@ The modules/vpc folder contains the following VPC related resources. All the res
 The infra/vpc/main.tf file calls all the vpc module with all the VPC resources using the variables we pass using the vpc.tfvars file
 
 
+## Step 3: Create VPC With Terraform Apply
 
+Lets create the VPC and related resources using terraform apply.
 
-
+```
+terraform apply -var-file=../../vars/dev/vpc.tfvars
+```
+This is where you tell Terraform to actually create the resources on AWS.
+It will use the values from the `vpc.tfvars` file and make the necessary changes.
+You’ll see a summary of the changes before proceeding, and you have to confirm (by typing `yes`) to allow Terraform to create the VPC, subnets, internet gateways, etc.
 
 ![pic](img)
 
 ![pic](img)
 
 
+
+# Step 4: Validate VPC
+Head over to the AWS Console the check the Resource Map of the VPC.
+
+Click on the created VPC and scroll down to view the Resource Map.
+
+You should see 15 subnets , 6 route tables, internet gateway and NAT gateway as shown below.
+
+
 ![pic](img)
 
+# Step 5: Cleanup the Resources
+
+- clean up the resources created by Terraform, execute the following command
+```
+terraform destroy  -var-file=../../vars/dev/vpc.tfvars
+```
+
+- You can go ahead and terminate your instance you created also
+
+# That's the end for this project. Welldone

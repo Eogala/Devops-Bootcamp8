@@ -119,4 +119,13 @@ terraform state list
 
 
 For more detailed information about this commands, visit the [Terraform Documentation](https://www.terraform.io/docs).
+## To do this project you need to have the following.
 
+1. A Valid AWS account with full permissions to create and manage AWS VPC service.
+2. Setup terraform on an ec2 instance, ensure you have a valid IAM role attached to the instance with VPC provisioning permissions.
+
+
+We are going to spin up an ec2 instance and attach the following IAM roles to it:
+
+- AmazonVPCFullAccess
+- AmazonEC2FullAccess

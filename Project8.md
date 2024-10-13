@@ -442,7 +442,7 @@ You should see 15 subnets , 6 route tables, internet gateway and NAT gateway as 
 ```
 terraform destroy  -var-file=../../vars/dev/vpc.tfvars
 ```
-
+![pic](img/Screenshot%20(607).pn)
 - You can go ahead and terminate your instance you created also
 
 # That's the end for this project. Welldone

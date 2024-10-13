@@ -204,6 +204,45 @@ cd terraform-vpc
 ```
 
 
+The VPC terraform code is structured in the following way.
+```
+
+├── infra
+│   └── vpc
+│       ├── main.tf
+│       └── variables.tf
+├── modules
+│   └── vpc
+│       ├── endpoint.tf
+│       ├── internet-gateway.tf
+│       ├── nacl.tf
+│       ├── nat-gateway.tf
+│       ├── outputs.tf
+│       ├── route-tables.tf
+│       ├── subnet.tf
+│       ├── variables.tf
+│       └── vpc.tf
+└── vars
+    └── dev
+        └── vpc.tfvars
+
+```
+
+vars folder contains the variables file named vpc.tfvars. It is the only file that needs modification
+
+The modules/vpc folder contains the following VPC related resources. All the resource provisioning logic is part of these resources.
+
+1. endpoint
+2. internet-gateway
+3. nacl
+4. nat-gateway
+5. route-tables
+6. subnet
+7. vpc
+The infra/vpc/main.tf file calls all the vpc module with all the VPC resources using the variables we pass using the vpc.tfvars file
+
+
+
 
 
 

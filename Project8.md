@@ -31,4 +31,92 @@ Terraform is a popular IaC tool developed by HashiCorp. It allows you to define,
 
 ### `terraform init`
 
-**Purpose**: Initializes a new or existing Terraform working directory
+**Purpose**: Initializes a new or existing Terraform working directory**Usage**: Prepares your directory for Terraform operations by downloading necessary provider plugins.
+
+```bash
+terraform init
+```
+
+### `terraform plan`
+
+**Purpose**: Creates an execution plan showing what changes Terraform will make to your infrastructure.
+
+**Usage**: Review planned changes before applying them.
+
+```bash
+terraform plan
+```
+
+### `terraform apply`
+
+**Purpose**: Applies the changes required to reach the desired state as defined in your configuration files.
+
+**Usage**: Executes the actions proposed by `terraform plan`.
+
+```bash
+terraform apply
+```
+
+### `terraform destroy`
+
+**Purpose**: Destroys the Terraform-managed infrastructure.
+
+**Usage**: Removes all resources defined in your configuration files.
+
+```bash
+terraform destroy
+```
+
+### `terraform validate`
+
+**Purpose**: Validates the configuration files for syntax and internal consistency.
+
+**Usage**: Checks for errors before running other commands.
+
+```bash
+terraform validate
+```
+
+### `terraform fmt`
+
+**Purpose**: Formats Terraform configuration files to follow a canonical style.
+
+**Usage**: Ensures consistent formatting of your configuration files.
+
+```bash
+terraform fmt
+```
+
+### `terraform show`
+
+**Purpose**: Displays a human-readable output of the state or plan.
+
+**Usage**: Inspects the current state or details of a plan.
+
+```bash
+terraform show
+```
+
+### `terraform output`
+
+**Purpose**: Reads and displays the values of output variables from the state file.
+
+**Usage**: Accesses outputs defined in your configuration.
+
+```bash
+terraform output
+```
+
+### `terraform state`
+
+**Purpose**: Advanced management of the Terraform state file.
+
+**Usage**: Includes subcommands to inspect and modify the state.
+
+```bash
+terraform state list
+```
+
+
+For more detailed information about this commands, visit the [Terraform Documentation](https://www.terraform.io/docs).
+

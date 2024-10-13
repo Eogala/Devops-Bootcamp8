@@ -164,6 +164,49 @@ We are going to spin up an ec2 instance and attach the following IAM roles to it
 
 ![pic](img/Screenshot%20(590).png)
 
+
+##  Connect to your instance via ssh 
+
+- ssh into the instance
+- install terraform
+```
+sudo snap install terraform
+
+```
+
+# Terraform AWS VPC Creation Workflow
+
+Note: The VPC and subnets for this demo is created based on the VPC design document.
+
+We will be creating the VPC with the following
+
+1. CIDR Block: 10.0.0.0/16
+2. Region: us-west-2
+3. Availability Zones: us-west-2a, us-west-2b, us-west-2c
+4. Subnets: 15 Subnets (One per availability Zone)
+5. Public Sunets (3)
+6. App Subets (3)
+7. DB Subnets (3)
+8. Management Subnet (3)
+9. Platform Subnet (3)
+10. NAT Gateway for Private subnets
+11. Internet Gateway for public subnets.
+
+## Step 1:  Clone thge repo into the instance and CD in the Cloned Repository
+- clone it using the following command.
+```
+git clone https://github.com/TobiOlajumoke/Terraform-VPC.git
+```
+
+- Then cd in to the terraform-vpc folder
+```
+cd terraform-vpc
+```
+
+
+
+
+
 ![pic](img)
 
 ![pic](img)

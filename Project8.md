@@ -149,4 +149,25 @@ We are going to spin up an ec2 instance and attach the following IAM roles to it
 ![pic](img/Screenshot%20(582).png)
 ![pic](img/Screenshot%20(583).png)
 ![pic](img/Screenshot%20(584).png)
+
 ![pic](img/Screenshot%20(585).png)
+
+## Now create an EC2 instance, Ubuntu 22.04
+
+## let us the attach the role created earlier to the instance
+
+![pic](img/Screenshot%20(586).png)
+
+![pic](img/Screenshot%20(588).png)
+
+![pic](img/Screenshot%20(589).png)
+
+![pic](img/Screenshot%20(590).png)
+
+![pic](img)
+
+![pic](img)
+
+
+![pic](img)
+

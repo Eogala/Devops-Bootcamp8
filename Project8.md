@@ -140,14 +140,13 @@ We are going to spin up an ec2 instance and attach the following IAM roles to it
 
    ![pic](img/Screenshot%20(578).png)
 
-    ![pic](img/Screenshot%20(579).png)
+![pic](img/Screenshot%20(579).png)
 
-    ![pic](img/Screenshot%20(580).png)
+![pic](img/Screenshot%20(580).png)
 
-    ![pic](img/Screenshot%20(581).png)
+![pic](img/Screenshot%20(581).png)
 
-    ![pic](img/Screenshot%20(581).png)
-
-    ![pic](img)
-
-
+![pic](img/Screenshot%20(582).png)
+![pic](img/Screenshot%20(583).png)
+![pic](img/Screenshot%20(584).png)
+![pic](img/Screenshot%20(585).png)

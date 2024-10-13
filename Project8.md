@@ -241,6 +241,41 @@ The modules/vpc folder contains the following VPC related resources. All the res
 7. vpc
 The infra/vpc/main.tf file calls all the vpc module with all the VPC resources using the variables we pass using the vpc.tfvars file
 
+## Step 2: Initialize Terraform and Execute the Plan
+
+
+
+- Now cd in to infra/vpc folder and execute the terraform plan to validate the configurations.
+
+
+```
+cd infra/vpc
+```
+This command is used to change into the directory where your Terraform files for creating the VPC are located. In this case, you're moving into the infra/vpc directory.
+
+- Firstly initialize Terraform
+
+```
+terraform init
+```
+This step is necessary to set up Terraform for the project.
+It will download any plugins (like AWS) Terraform needs and prepare your project.
+You only need to do this once when you start working with Terraform in a new directory.
+
+
+- Execute the plan
+
+```
+terraform plan -var-file=../../vars/dev/vpc.tfvars
+```
+The plan command shows you what changes Terraform will make to your AWS resources.
+The `-var-file` is pointing to the file that contains specific values (like network ranges) for the development environment (dev).
+After running this command, you’ll get an output showing what Terraform plans to create or modify (like the VPC, subnets, and gateways).
+
+You should see an output with all the resources that will be created by terraform.
+
+
+
 
 ## Step 3: Create VPC With Terraform Apply
 

@@ -407,6 +407,10 @@ After running this command, you’ll get an output showing what Terraform plans 
 You should see an output with all the resources that will be created by terraform.
 
 
+![pic](img/Screenshot%20(609).png)
+
+![pic](img/Screenshot%20(610).png)
+
 
 
 ## Step 3: Create VPC With Terraform Apply
@@ -420,9 +424,12 @@ This is where you tell Terraform to actually create the resources on AWS.
 It will use the values from the `vpc.tfvars` file and make the necessary changes.
 You’ll see a summary of the changes before proceeding, and you have to confirm (by typing `yes`) to allow Terraform to create the VPC, subnets, internet gateways, etc.
 
+
+![pic](img/Screenshot%20(611).png)
+
+
 ![pic](img/Screenshot%20(608).png)
 
-![pic](img)
 
 
 
